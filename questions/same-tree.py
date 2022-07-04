@@ -22,4 +22,16 @@ class Solution:
                 queue.append((node_p.left, node_q.left))
                 queue.append((node_p.right, node_q.right))
         return True
-
+        # stack = [(p, q)]
+        # while stack:
+        #     node_p, node_q = stack.pop()
+        #     if not node_p and not node_q:
+        #         continue
+        #     elif None in [node_p, node_q]:
+        #         return False
+        #     else:
+        #         if node_p.val != node_q.val:
+        #             return False
+        #         stack.append((node_p.right, node_q.right))
+        #         stack.append(((node_p.left, node_q.left)))
+        # return True
